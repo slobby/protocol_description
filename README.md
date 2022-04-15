@@ -16,7 +16,7 @@ waiting_time
 
 vis:[TCP_id=]/station_id/station_sub_id/object_type_name/object_name/object_state[?elapsed_time]
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 |'vis'              | Type[str]  |обязательный   | маркер, строка для Visualisation                                                                         | vis
 |2 |':'                | Type[str]  |обязательный   | разделитель между типом приложения и остальными параметрами                                              | :
@@ -52,7 +52,7 @@ GET:station_id:station_sub_id:object_type_id:object_name
 
 ERR_FORMAT
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 | 'ERR_FORMAT'   | Type[str]  |обязательный   | неправильный запрос(/нет такого кода типа). | ERR_FORMAT |
 
@@ -61,7 +61,7 @@ ERR_FORMAT
 
 station_id:station_sub_id:object_type_id:object_name:NO
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 |'station_id'       | Type[int]  |обязательный   | код станции                                                                                              | 7600056
 |2 |'station_sub_id'   | Type[int]  |обязательный   | код графической модели станции                                                                           | 2
@@ -73,7 +73,7 @@ station_id:station_sub_id:object_type_id:object_name:NO
 
 station_id:station_sub_id:object_type_id:object_name:[layer_id, color_active_phase_id, [color_pasive_phase_id]:]
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 |'station_id'            | Type[int]  |обязательный   | код станции                                                                                          | 7600056
 |2 |'station_sub_id'        | Type[int]  |обязательный   | код графической модели станции                                                                       | 2
@@ -88,7 +88,7 @@ station_id:station_sub_id:object_type_id:object_name:[layer_id, color_active_pha
 
 vis:[TCP_id=]/station_id/object_type_name/object_name/command_name[:command_type]
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 |'vis'              | Type[str]  |обязательный   | маркер, строка для Visualisation                                                                         | vis
 |2 |'/'                | Type[str]  |обязательный   | разделитель параметров                                                                                   | /
@@ -105,7 +105,7 @@ vis:[TCP_id=]/station_id/object_type_name/object_name/command_name[:command_type
 
 CMD:station_id:object_type_id:object_name:command_name:command_type
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 |'CMD'              | Type[str]  |обязательный   | маркер, запрос на выполнение команды                                                                     | CMD
 |2 |'station_id'       | Type[int]  |обязательный   | код станции                                                                                              | 7600056
@@ -120,7 +120,7 @@ CMD:station_id:object_type_id:object_name:command_name:command_type
 
 ERR_FORMAT
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 | 'ERR_FORMAT'   | Type[str]  |обязательный   | неправильный запрос(/нет такого кода типа).| ERR_FORMAT|
 
@@ -129,7 +129,7 @@ ERR_FORMAT
 
 CMD:station_id:object_type_id:object_name:command_name:confirmation
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 |1 |'CMD'              | Type[str]  |обязательный   | маркер, запрос на выполнение команды                                                                     | CMD
 |5 |'station_id'       | Type[int]  |обязательный   | код станции                                                                                              | 7600056
@@ -145,7 +145,7 @@ CMD:station_id:object_type_id:object_name:command_name:confirmation
 
 test:[TCP_id=]/table_id/impulse_name/impulse_state[?elapsed_time]
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'test'             | Type[str]  |обязательный   | маркер, строка для Tester                                                                                | test
 2 |':'                | Type[str]  |обязательный   | разделитель между типом приложения и остальными параметрами                                              | :
@@ -166,7 +166,7 @@ test:[TCP_id=]/table_id/impulse_name/impulse_state[?elapsed_time]
 
 GET:table_id:impulse_name
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'GET'              | Type[str]  |обязательный   | маркер, запрос на получение состояния                                                                    | GET
 2 |'table_id'         | Type[int]  |обязательный   | код таблицы                                                                                              | 7600056
@@ -174,9 +174,11 @@ GET:table_id:impulse_name
 
 Типы ответа на запрос типа GET:
 1.
-    1          2       3
+
 table_id:impulse_state:NO
 
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
+|---| ------------- |------------- |------------- |------------- |-------- |
 1 |'table_id'         | Type[int]  |обязательный   | код станции                                                                                              | 3
 2 |'impulse_name'     | Type[str]  |обязательный   | имя импульса состояние которого получаем                                                                 | Н
 3 |'NO'               | Type[str]  |обязательный   | либо таблицы нет, либо импульса в таблице нет                                                            | NO
@@ -186,7 +188,7 @@ table_id:impulse_state:NO
 
 table_id:impulse_state:state
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'table_id'         | Type[int]  |обязательный   | код станции                                                                                              | 3
 2 |'impulse_name'     | Type[str]  |обязательный   | имя импульса состояние которого получаем                                                                 | Н
@@ -198,7 +200,7 @@ table_id:impulse_state:state
 
 test:[TCP_id=]/table_id/command_name[:command_type]
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'test'             | Type[str]  |обязательный   | маркер, строка для Tester                                                                                | test
 2 |':'                | Type[str]  |обязательный   | разделитель между типом приложения и остальными параметрами                                              | :
@@ -213,7 +215,7 @@ test:[TCP_id=]/table_id/command_name[:command_type]
 
 CMD:table_id:command_name:command_type
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'CMD'              | Type[str]  |обязательный   | маркер, запрос на выполнение команды                                                                     | CMD
 2 |'table_id'         | Type[int]  |обязательный   | код станции                                                                                              | 7600056
@@ -225,7 +227,7 @@ CMD:table_id:command_name:command_type
 
 CMD:table_id:command_name:confirmation
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'CMD'              | Type[str]  |обязательный   | маркер, запрос на выполнение команды                                                                     | CMD
 2 |'table_id'         | Type[int]  |обязательный   | код станции                                                                                              | 7600056
@@ -238,7 +240,7 @@ CMD:table_id:command_name:confirmation
 
 test:[TCP_id=]/table_id/@impulse_name[:impulse_type]
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'test'             | Type[str]  |обязательный   | маркер, строка для Tester                                                                                | test
 2 |':'                | Type[str]  |обязательный   | разделитель между типом приложения и остальными параметрами                                              | :
@@ -254,7 +256,7 @@ test:[TCP_id=]/table_id/@impulse_name[:impulse_type]
 
 CMD:table_id:@impulse_name:impulse_type
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'CMD'              | Type[str]  |обязательный   | маркер, запрос на выполнение команды                                                                     | CMD
 2 |'table_id'         | Type[int]  |обязательный   | код станции                                                                                              | 7600056
@@ -266,7 +268,7 @@ CMD:table_id:@impulse_name:impulse_type
 
 CMD:table_id:impulse_type:confirmation
 
-|poz|  Param name   |  Param type  |   Required   |  Description | Example |
+|pos|  Param name   |  Param type  |   Required   |  Description | Example |
 |---| ------------- |------------- |------------- |------------- |-------- |
 1 |'CMD'              | Type[str]  |обязательный   | маркер, запрос на выполнение команды                                                                     | CMD
 2 |'table_id'         | Type[int]  |обязательный   | код станции                                                                                              | 7600056
